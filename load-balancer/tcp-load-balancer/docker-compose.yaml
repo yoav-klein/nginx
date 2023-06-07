@@ -1,0 +1,27 @@
+version: '3'
+
+services:
+  ssh-server-1:
+    build:
+      context: .
+    ports:
+      - "1111:22"
+
+  ssh-server-2:
+    build:
+      context: .
+    ports:
+      - "2222:22"
+
+  ssh-server-3:
+    build:
+      context: .
+    ports:
+      - "3333:22"
+
+  ssh-server-4:
+    build:
+      context: .
+    ports:
+      - "4444:22"
+
